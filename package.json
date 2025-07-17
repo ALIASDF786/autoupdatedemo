@@ -1,0 +1,30 @@
+{
+  "name": "autoupdatedemo",
+  "version": "1.0.0",
+  "description": "its first version",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "build": {
+    "appId": "com.RayanAli.autoupdatedemo",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "ALIASDF786",
+        "repo": "https://github.com/ALIASDF786/autoupdatedemo"
+      }
+    ]
+  },
+  "author": "Rayan (Ali)",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^37.2.3"
+  },
+  "dependencies": {
+    "electron-builder": "^26.0.12",
+    "electron-log": "^5.4.1",
+    "electron-updater": "^6.6.2"
+  }
+}
